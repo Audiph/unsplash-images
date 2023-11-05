@@ -9,3 +9,5 @@ export const AppProvider = ({ children }) => {
     <AppContext.Provider value={{ greeting }}>{children}</AppContext.Provider>
   );
 };
+
+export const useGlobalContext = () => useContext(AppContext);
